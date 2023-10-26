@@ -1,0 +1,81 @@
+{
+  "name": "Ju react app",
+  "version": "0.1.1",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@ju-protocol/sdk": "^0.3.3",
+    "@mui/icons-material": "^5.14.1",
+    "@mui/material": "^5.14.1",
+    "@solana/wallet-adapter-base": "^0.9.22",
+    "@solana/wallet-adapter-material-ui": "^0.16.30",
+    "@solana/wallet-adapter-react": "^0.15.32",
+    "@solana/wallet-adapter-wallets": "^0.19.18",
+    "@solana/web3.js": "^1.78.0",
+    "bn.js": "^5.2.1",
+    "buffer": "^6.0.3",
+    "dayjs": "^1.11.10",
+    "notistack": "^3.0.1",
+    "react": "^18.2.0",
+    "react-app-rewired": "^2.2.1",
+    "react-dom": "^18.2.0",
+    "react-location-picker": "^1.5.0",
+    "react-player": "^2.12.0",
+    "react-router-dom": "^6.14.2",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.9.5",
+    "util": "^0.12.5",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "build": "tsc --build --verbose && react-app-rewired build",
+    "clean": "shx mkdir -p build lib && shx rm -rf build lib",
+    "lint": "prettier --check 'src/{*,**/*}.{ts,tsx,js,jsx,json}' && eslint",
+    "start": "react-app-rewired start",
+    "test": "CI=true react-app-rewired test --passWithNoTests",
+    "test:watch": "react-app-rewired test --passWithNoTests",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@types/testing-library__jest-dom": "^5.14.6",
+    "assert": "^2.0.0",
+    "browserify-zlib": "^0.2.0",
+    "crypto-browserify": "^3.12.0",
+    "events": "^3.3.0",
+    "https-browserify": "^1.0.0",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10",
+    "shx": "^0.3.4",
+    "source-map-loader": "^4.0.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "typescript": "~4.7.4",
+    "url": "^0.11.1",
+    "webpack": "^5.88.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
